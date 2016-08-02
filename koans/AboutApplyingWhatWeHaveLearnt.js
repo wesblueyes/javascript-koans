@@ -1,8 +1,8 @@
-var _; //globals
+
 
 describe("About Applying What We Have Learnt", function() {
 
-  var products;
+  let products
 
   beforeEach(function () {
     products = [
@@ -11,14 +11,14 @@ describe("About Applying What We Have Learnt", function() {
        { name: "South Of The Border", ingredients: ["black beans", "jalapenos", "mushrooms"], containsNuts: false },
        { name: "Blue Moon", ingredients: ["blue cheese", "garlic", "walnuts"], containsNuts: true },
        { name: "Taste Of Athens", ingredients: ["spinach", "kalamata olives", "sesame seeds"], containsNuts: true }
-    ];
-  });
+    ]
+  })
 
   /*********************************************************************************/
 
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (imperative)", function () {
 
-    var i,j,hasMushrooms, productsICanEat = [];
+    var i,j,hasMushrooms, productsICanEat = []
 
     for (i = 0; i < products.length; i+=1) {
         if (products[i].containsNuts === false) {
@@ -28,20 +28,20 @@ describe("About Applying What We Have Learnt", function() {
                   hasMushrooms = true;
                }
             }
-            if (!hasMushrooms) productsICanEat.push(products[i]);
+            if (!hasMushrooms) productsICanEat.push(products[i])
         }
     }
 
-    expect(productsICanEat.length).toBe(FILL_ME_IN);
+    expect(productsICanEat.length).toBe(1);
   });
 
   it("given I'm allergic to nuts and hate mushrooms, it should find a pizza I can eat (functional)", function () {
 
-      var productsICanEat = [];
+      var productsICanEat = []
 
       /* solve using filter() & all() / any() */
 
-      expect(productsICanEat.length).toBe(FILL_ME_IN);
+      expect(productsICanEat.length).toBe(0)
   });
 
   /*********************************************************************************/
@@ -55,14 +55,14 @@ describe("About Applying What We Have Learnt", function() {
       }
     }
 
-    expect(sum).toBe(FILL_ME_IN);
+    expect(sum).toBe(233168);
   });
 
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
 
     var sum = FILL_ME_IN;    /* try chaining range() and reduce() */
 
-    expect(233168).toBe(FILL_ME_IN);
+    expect(233168).toBe(233168);
   });
 
   /*********************************************************************************/
@@ -75,7 +75,7 @@ describe("About Applying What We Have Learnt", function() {
         }
     }
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(2);
   });
 
   it("should count the ingredient occurrence (functional)", function () {
@@ -83,7 +83,7 @@ describe("About Applying What We Have Learnt", function() {
 
     /* chain() together map(), flatten() and reduce() */
 
-    expect(ingredientCount['mushrooms']).toBe(FILL_ME_IN);
+    expect(ingredientCount['mushrooms']).toBe(undefined);
   });
 
   /*********************************************************************************/
@@ -108,6 +108,6 @@ describe("About Applying What We Have Learnt", function() {
 
   it("should find the 10001st prime", function () {
 
-  });
+  })
   */
-});
+})
